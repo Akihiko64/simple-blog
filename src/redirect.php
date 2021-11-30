@@ -1,6 +1,6 @@
 <?php
 
-function redireciona(string $url): void
+function redirect(string $url): void
 {
     header("Location: $url");
     die();

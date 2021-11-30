@@ -1,9 +1,8 @@
 <?php
-
-require_once "./config.php";
-require_once "./src/Artigo.php";
-$artigo = new Artigo($mysql);
-$artigos = $artigo->exibirTodos();
+use Akihiko64\Blog\models\Post;
+require_once "../blog/config.php";
+$artigo = new Post($mysql);
+$artigos = $artigo->getAllPosts();
 ?>
 
 <!DOCTYPE html>

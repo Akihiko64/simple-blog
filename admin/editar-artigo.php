@@ -1,13 +1,13 @@
 <?php
 require_once "../config.php";
 require_once "../src/Artigo.php";
-require "../src/redireciona.php";
+require "../src/redirect.php";
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $artigo = new Artigo($mysql);
     $artigo->editar($_POST["id"], $_POST["titulo"], $_POST["conteudo"]);
 
-    redireciona("/blog/admin/index.php");
+    redirect("/blog/admin/index.php");
 }
 
 $artigo = new Artigo($mysql);
