@@ -1,0 +1,19 @@
+{
+    "name": "akihiko64/blog",
+    "description": "Simple Blog",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Akihiko64\\Blog\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Nacelio Barbosa",
+            "email": "naceliombdev@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.4"
+    }
+}
