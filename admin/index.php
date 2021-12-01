@@ -11,7 +11,7 @@ $artigos = $artigo->getAllPosts();
     <head>
         <title>Página administrativa</title>
         <meta charset="UTF-8" />
-        <link rel="stylesheet" type="text/css" href="../style.css" />
+        <link rel="stylesheet" type="text/css" href="../src/styles/style.css" />
     </head>
 
     <body>
